@@ -1,7 +1,7 @@
 
 <h1 class="" style="color: rgb(41, 107, 194);">{{title}}</h1>
 <div class="col-md-12">
-    <app-hijo *ngIf="valores" [usuarioRegistro]="valores"></app-hijo>
+    <app-hijo *ngIf="valoresingresados" [usuarioRegistro]="valoresingresados"></app-hijo>
   </div>
 <form (ngSubmit)="enviar(contactForm.value)" #contactForm="ngForm">
     <div class="mb-4">

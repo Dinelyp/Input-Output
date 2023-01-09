@@ -20,11 +20,11 @@ export class PadreComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  valores=""
+  valoresingresados=""
 
  enviar(values:any):void{
   console.log('from.values:',values);
-  this.valores=values;
+  this.valoresingresados=values;
   
 
 }
