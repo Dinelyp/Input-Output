@@ -1,0 +1,26 @@
+
+<h1 class="" style="color: rgb(41, 107, 194);">{{title}}</h1>
+<div class="col-md-12">
+    <app-hijo *ngIf="valores" [usuarioRegistro]="valores"></app-hijo>
+  </div>
+<form (ngSubmit)="enviar(contactForm.value)" #contactForm="ngForm">
+    <div class="mb-4">
+    <label for="name" class="form-label">Nombre:</label>
+    <input type="text" class="form-control" id="name" name="nombre" [(ngModel)] = "model.nombre"></div>
+<div class="mb-4">
+    <label for="dni" class="form-label">DNI:</label>
+    <input type="text" class="form-control" id="dni" name="dni" [(ngModel)] = "model.dni" >
+</div>
+<div class="mb-4">
+    <label for="estado civil" class="form-label">Estado Civil:</label>
+    <select name="estado_civil" id="estado_civil" class="form-select form-select-sm" [(ngModel)] = "model.estado_civil">
+      <option selected>Soltero</option>
+      <option value="Casado">Casado</option>
+      <option value="Conviviente">Conviviente</option>
+    </select>
+</div>
+<div class="">
+    <button type="submit" class="btn btn-success">Enviar</button>
+</div>
+</form>
+
